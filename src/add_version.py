@@ -10,7 +10,7 @@ SOURCE_FILE = "data/dataset.csv"
 VERSION_FILE = f"data/versions/{VERSION}.csv"
 
 # ---------- Firebase init ----------
-cred = credentials.Certificate("secrets/firebase_key.json")
+cred = credentials.Certificate("secret/firebase_key.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 

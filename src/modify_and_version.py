@@ -14,7 +14,7 @@ NEW_FILE = f"data/versions/{NEW_VERSION}.csv"
 WORKING_FILE = "data/dataset.csv"
 
 # ---------- Firebase init ----------
-cred = credentials.Certificate("secrets/firebase_key.json")
+cred = credentials.Certificate("secret/firebase_key.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
